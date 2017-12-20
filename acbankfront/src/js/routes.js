@@ -4,6 +4,7 @@
 import Root from './Root';
 import Home from './containers/Home'
 import Detail from './containers/Detail'
+
 const routes = [
   { component: Root,
     routes: [
