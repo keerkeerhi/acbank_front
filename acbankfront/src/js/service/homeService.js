@@ -4,7 +4,13 @@
 import axios from 'axios';
 
 export default {
-  getUserList(){
-
-  }
+    checkAuth(){
+        return axios.post('/public/checkAuth')
+            .then((response) => {
+                console.log('====>res=>', response);
+            })
+            .catch((error) => {
+                console.log(error);
+            });
+    }
 }
