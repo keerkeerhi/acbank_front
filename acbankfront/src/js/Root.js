@@ -3,16 +3,16 @@
  */
 import React,{Component} from 'react';
 import {renderRoutes} from 'react-router-config';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 class Root extends Component {
   render(){
     let {route} = this.props;
     return (
-      <div>
-        <h1>Root</h1>
-        {/* child routes won't render without this */}
-        {renderRoutes(route.routes)}
-      </div>
+      <MuiThemeProvider className="homeDiv">
+          {/* child routes won't render without this */}
+          {renderRoutes(route.routes)}
+      </MuiThemeProvider>
     )
   }
 }

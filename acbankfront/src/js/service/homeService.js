@@ -2,15 +2,29 @@
  * Created by Administrator on 2017/12/20.
  */
 import axios from 'axios';
+import {global_host} from '../common/globalConfig';
 
 export default {
     checkAuth(){
-        return axios.post('/public/checkAuth')
-            .then((response) => {
-                console.log('====>res=>', response);
-            })
-            .catch((error) => {
-                console.log(error);
-            });
+        return new Promise((resolve,reject)=>{
+            axios.post(global_host + 'checkAuth')
+                .then((response) => {
+                    resolve(response.data);
+                })
+                .catch((error) => {
+                    reject(error);
+                });
+        })
+    },
+    login(params){
+        return new Promise((resolve,reject)=>{
+            axios.post(global_host + 'login',params)
+                .then((response) => {
+                    resolve(response.data);
+                })
+                .catch((error) => {
+                    reject(error);
+                });
+        })
     }
 }

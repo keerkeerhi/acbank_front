@@ -4,6 +4,7 @@
 import Root from './Root';
 import Home from './containers/Home'
 import Detail from './containers/Detail'
+import Login from './containers/Login'
 
 const routes = [
   { component: Root,
@@ -19,6 +20,9 @@ const routes = [
         //     component: GrandChild
         //   }
         // ]
+      },
+      { path: '/Login',
+          component: Login,
       }
     ]
   }

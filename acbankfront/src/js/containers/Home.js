@@ -5,13 +5,22 @@ import React, {Component} from 'react';
 import homeService from '../service/homeService';
 
 class Home extends Component {
-    constructor() {
+    constructor(props) {
         super();
-        homeService.checkAuth();
+        this.checkAuth();
+    }
+
+    checkAuth(){
+        homeService.checkAuth().then(res=>{
+            if (res.ispassed)
+                this.props.history.push('/Detail')
+            else
+                this.props.history.push('/Login')
+        })
     }
 
     render() {
-        return <div>this is Home!</div>
+        return <div></div>
     }
 }
 
