@@ -3,7 +3,8 @@
  */
 import Root from './Root';
 import Home from './containers/Home'
-import Detail from './containers/Detail'
+import ManagerHome from './containers/ManagerHome'
+import StaffHome from './containers/StaffHome'
 import Login from './containers/Login'
 
 const routes = [
@@ -11,10 +12,7 @@ const routes = [
     routes: [
       { path: '/',
         exact: true,
-        component: Home
-      },
-      { path: '/Detail',
-        component: Detail,
+        component: Home,
         // routes: [
         //   { path: '/child/:id/grand-child',
         //     component: GrandChild
@@ -23,7 +21,13 @@ const routes = [
       },
       { path: '/Login',
           component: Login,
-      }
+      },
+      { path: '/ManagerHome',
+          component: ManagerHome,
+      },
+      { path: '/StaffHome',
+          component: StaffHome,
+      },
     ]
   }
 ];

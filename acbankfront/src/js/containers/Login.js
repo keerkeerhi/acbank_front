@@ -23,7 +23,7 @@ class Login extends Component {
                         <input type="password" name="pwd"
                                onChange={(evt)=>this.setState({password: evt.target.value})}
                                placeholder="密码" required="required" />
-                        <button type="button" onClick={this.login} className="btn btn-primary btn-block btn-large">登录</button>
+                        <button type="button" onClick={this.login.bind(this)} className="btn btn-primary btn-block btn-large">登录</button>
                     </form>
                 </div>
             </section>
@@ -31,7 +31,18 @@ class Login extends Component {
     }
 
     login(){
-        homeService.login(this.state)
+        homeService.login(this.state).then(res=>{
+            if (res.flag)
+            {
+                let user = res.info;
+                if (user.type=='1')
+                    this.props.history.push('/ManagerHome')
+                else
+                    this.props.history.push('/StaffHome')
+            }
+            else
+                alert(res);
+        })
     }
 }
 
