@@ -4,10 +4,12 @@
 import axios from 'axios';
 import {global_host} from '../common/globalConfig';
 
+const checkAuth = "checkAuth";
+
 export default {
     checkAuth(){
         return new Promise((resolve,reject)=>{
-            axios.post(global_host + 'checkAuth')
+            axios.get(global_host + 'checkAuth')
                 .then((response) => {
                     resolve(response.data);
                 })

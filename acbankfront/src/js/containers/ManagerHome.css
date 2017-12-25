@@ -1,0 +1,16 @@
+.staffBody{
+    height: 100%;
+}
+.footerCls{
+    position: fixed;
+    bottom:0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.listCls{
+    height: calc(100% - 56px);
+}
