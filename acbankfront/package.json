@@ -7,11 +7,14 @@
     "material-ui": "^0.20.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-form-validator-core": "^0.3.0",
+    "react-material-ui-form-validator": "^1.0.4",
+    "react-notification-system": "^0.2.16",
     "react-router-config": "^1.0.0-beta.4",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.17"
   },
-  "proxy": "http://localhost:5000",
+  "proxy": "http://localhost:8888",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

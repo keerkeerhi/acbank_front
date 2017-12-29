@@ -38,7 +38,7 @@ class Login extends Component {
                 if (user.type=='1')
                     this.props.history.push('/ManagerHome')
                 else
-                    this.props.history.push('/StaffHome')
+                    this.props.history.push('/StaffHome/'+user.id)
             }
             else
                 alert(res);

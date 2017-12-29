@@ -7,10 +7,8 @@
       <excludeFolder url="file://$MODULE_DIR$/temp" />
       <excludeFolder url="file://$MODULE_DIR$/tmp" />
     </content>
-    <content url="file://$MODULE_DIR$/../../antd-mobile-samples" />
     <content url="file://$MODULE_DIR$/../../antd-mobile-samples-master" />
-    <content url="file://$MODULE_DIR$/../../react-router-tutorial" />
-    <content url="file://$MODULE_DIR$/../../react-router-tutorial-master" />
+    <content url="file://$MODULE_DIR$/../../react-notification-system" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>

@@ -4,12 +4,12 @@
 import axios from 'axios';
 import {global_host} from '../common/globalConfig';
 
-const staffUrl = "staff"
+const customerurl = "customs"
 
 export default {
-    staffList(){
-        return new Promise((resolve,reject)=>{
-            axios.get(global_host + staffUrl)
+    customers(params){
+        return new Promise((resolve, reject) => {
+            axios.get(global_host + customerurl + '/' + params.id)
                 .then((response) => {
                     resolve(response.data);
                 })
@@ -18,9 +18,9 @@ export default {
                 });
         })
     },
-    saveStaff(params){
-        return new Promise((resolve,reject)=>{
-            axios.post(global_host + staffUrl,params)
+    delCustomer(params){
+        return new Promise((resolve, reject) => {
+            axios.delete(global_host + customerurl + "/" + params.id)
                 .then((response) => {
                     resolve(response.data);
                 })
@@ -29,21 +29,9 @@ export default {
                 });
         })
     },
-    delStaff(params){
-        return new Promise((resolve,reject)=>{
-            axios.delete(global_host + staffUrl+"/"+params.id)
-                .then((response) => {
-                    resolve(response.data);
-                })
-                .catch((error) => {
-                    reject(error);
-                });
-        })
-    },
-    showStaff(params)
-    {
-        return new Promise((resolve,reject)=>{
-            axios.get(global_host + staffUrl+"/"+params.id)
+    saveCustomer(params){
+        return new Promise((resolve, reject) => {
+            axios.post(global_host + customerurl,params)
                 .then((response) => {
                     resolve(response.data);
                 })

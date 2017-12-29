@@ -1,0 +1,27 @@
+.registPaper{
+    margin: 20px 5px 20px 5px;
+    padding-bottom: 20px;
+}
+
+.registSec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.applyTitle{
+    width: 100%;
+    padding-top: 20px;
+}
+.applyTitle>span:first-child{
+    letter-spacing: 2px;
+    font-size: 1em;
+    font-weight: bold;
+    margin:20px 0 0 20px;
+}
+
+.applyTitle>span:nth-child(3){
+    font-size: 0.7em;
+    margin-left: 20px;
+    color: #e34e47;
+}

@@ -16,6 +16,6 @@
     height: calc(100% - 56px);
 }
 
-/*.listItemCls:hover {*/
-    /*background: #ccc;*/
-/*}*/
+.listItemCls:hover {
+    background: #ccc;
+}

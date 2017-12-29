@@ -7,6 +7,7 @@ import homeService from '../service/homeService';
 class Home extends Component {
     constructor(props) {
         super();
+        console.log('------------->Home')
         this.checkAuth();
     }
 

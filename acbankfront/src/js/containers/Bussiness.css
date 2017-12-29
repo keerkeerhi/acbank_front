@@ -1,0 +1,40 @@
+
+.bussinessBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headImg {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.userPost {
+    color: #ce1a13;
+}
+
+.shortCut{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    width:  350px;
+}
+.shortCut>li{
+    margin: 15px;
+}
+.shortCut>li>div:last-child{
+    margin-top: 10px;
+}
+.fontsize50{
+    font-size: 28px;
+}
+.shortCutbtn{
+    width: 60px;
+    height: 60px;
+}
+

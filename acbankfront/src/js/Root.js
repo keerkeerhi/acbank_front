@@ -4,9 +4,11 @@
 import React,{Component} from 'react';
 import {renderRoutes} from 'react-router-config';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import '../images/font/iconfont.css'
 
 class Root extends Component {
-  render(){
+  render(props){
+    console.log('-------------->Root',window.location.pathname);
     let {route} = this.props;
     return (
       <MuiThemeProvider className="homeDiv">
