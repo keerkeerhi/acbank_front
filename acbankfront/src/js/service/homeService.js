@@ -3,13 +3,14 @@
  */
 import axios from 'axios';
 import {global_host} from '../common/globalConfig';
+import {fGetRandom} from '../common/Util'
 
 const checkAuth = "checkAuth";
 
 export default {
     checkAuth(){
         return new Promise((resolve,reject)=>{
-            axios.get(global_host + 'checkAuth')
+            axios.post(global_host + 'checkAuth'+'?t='+fGetRandom())
                 .then((response) => {
                     resolve(response.data);
                 })

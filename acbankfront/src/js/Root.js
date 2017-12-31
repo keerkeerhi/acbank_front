@@ -8,7 +8,6 @@ import '../images/font/iconfont.css'
 
 class Root extends Component {
   render(props){
-    console.log('-------------->Root',window.location.pathname);
     let {route} = this.props;
     return (
       <MuiThemeProvider className="homeDiv">

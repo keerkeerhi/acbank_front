@@ -12,6 +12,7 @@ class Login extends Component {
     }
 
     render() {
+        console.log('loginjs')
         return (
             <section className="loginsec">
                 <div className="login">
@@ -34,11 +35,7 @@ class Login extends Component {
         homeService.login(this.state).then(res=>{
             if (res.flag)
             {
-                let user = res.info;
-                if (user.type=='1')
-                    this.props.history.push('/ManagerHome')
-                else
-                    this.props.history.push('/StaffHome/'+user.id)
+                this.props.history.push('/home')
             }
             else
                 alert(res);

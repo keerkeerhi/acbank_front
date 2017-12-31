@@ -17,5 +17,16 @@ export default {
                     reject(error);
                 });
         })
+    },
+    dictListDetail(params){
+        return new Promise((resolve, reject) => {
+            axios.get(global_host + dicturl+'/'+params.id)
+                .then((response) => {
+                    resolve(response.data);
+                })
+                .catch((error) => {
+                    reject(error);
+                });
+        })
     }
 }

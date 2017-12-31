@@ -38,7 +38,7 @@ function getParams(params) {
 }
 
 function fGetRandom() {
-  return (new Date).getTime().toString().substring(8);
+  return Date.now().toString().substring(8);
 }
 
 const getLengthNum = function (str, num) {

@@ -5,7 +5,8 @@
  * Created by Administrator on 2017/12/20.
  */
 import React, {Component} from 'react'
-import {Avatar, Dialog, FlatButton, FloatingActionButton, Divider, Paper, TextField} from 'material-ui'
+import {Avatar, Dialog, FlatButton, FloatingActionButton, Divider, Paper, TextField, RaisedButton} from 'material-ui'
+import {Toolbar, ToolbarGroup} from 'material-ui/Toolbar';
 import NotificationSystem from 'react-notification-system';
 import List from 'material-ui/List/List'
 import ListItem from 'material-ui/List/ListItem'
@@ -28,7 +29,9 @@ class ManagerHome extends Component {
         staffList: [],
         loading: false,
         open: false,
-        currentStaff: {}
+        currentStaff: {},
+        del_winOpen: false,
+        del_id: ""
     }
 
     constructor() {
@@ -76,18 +79,37 @@ class ManagerHome extends Component {
                 })
         })
     }
-
-    handleDel = (id) => {
+    handleOpen_del = (id) => {
+        this.setState({del_winOpen: true, del_id: id})
+    }
+    handleClose_del = () => {
+        this.setState({del_winOpen: false})
+    }
+    handleDel = () => {
+        let id = this.state.del_id;
         managerService.delStaff({id}).then(res => {
-            console.log('==============>', res);
+            console.log('==============>', res, this);
             if (res == '1') {
                 this.getStaffList();
+                this.handleClose_del();
             }
             else
-                alert("删除失败！");
+                this._notificationSystem.addNotification({
+                    title: 'Fail!',
+                    message: "删除员工失败！",
+                    autoDismiss: 3,
+                    level: 'error',
+                    position: 'tr'
+                })
         })
     }
 
+    handleLogout = () =>{
+        managerService.logout().then(res=>{
+            if (res=='1')
+                this.props.history.push('/Login')
+        })
+    }
     render() {
         console.log('====>', this.state.staffList);
         const actions = [
@@ -103,8 +125,28 @@ class ManagerHome extends Component {
                 onClick={this.handleSave}
             />,
         ]
+        const actions_del = [
+            <FlatButton
+                label="取消"
+                primary={true}
+                onClick={this.handleClose_del}
+            />,
+            <FlatButton
+                label="确认删除"
+                primary={true}
+                keyboardFocused={true}
+                onClick={this.handleDel}
+            />,
+        ]
         return (
             <section className="staffBody">
+                <Toolbar>
+                    <ToolbarGroup firstChild={true}>
+                    </ToolbarGroup>
+                    <ToolbarGroup>
+                        <RaisedButton label="退出登录" onClick={this.handleLogout} primary={true}/>
+                    </ToolbarGroup>
+                </Toolbar>
                 <List className="listCls">
                     {
                         this.state.staffList.map((staff, index) => {
@@ -123,7 +165,7 @@ class ManagerHome extends Component {
                                                  style={{fontSize: '35px', color: '#FF4F4F'}}
                                                  onClick={
                                                      () => {
-                                                         this.handleDel(staff.id)
+                                                         this.handleOpen_del(staff.id)
                                                      }
                                                  }
                                               ></i>
@@ -157,6 +199,15 @@ class ManagerHome extends Component {
                         }} style={style}/>
                         <p>初始密码为123456，建立账号以后通知业务经理修改密码。</p>
                     </div>
+                </Dialog>
+                <Dialog
+                    title="确认删除员工？"
+                    actions={actions_del}
+                    modal={false}
+                    open={this.state.del_winOpen}
+                    onRequestClose={this.handleClose_del}
+                >
+                    确认删除员工？
                 </Dialog>
                 <NotificationSystem ref="notificationSystem"/>
             </section>

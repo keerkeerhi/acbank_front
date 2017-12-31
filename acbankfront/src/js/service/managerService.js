@@ -5,6 +5,7 @@ import axios from 'axios';
 import {global_host} from '../common/globalConfig';
 
 const staffUrl = "staff"
+const logoutUrl = 'logout';
 
 export default {
     staffList(){
@@ -21,6 +22,17 @@ export default {
     saveStaff(params){
         return new Promise((resolve,reject)=>{
             axios.post(global_host + staffUrl,params)
+                .then((response) => {
+                    resolve(response.data);
+                })
+                .catch((error) => {
+                    reject(error);
+                });
+        })
+    },
+    logout(){
+        return new Promise((resolve,reject)=>{
+            axios.post(global_host + logoutUrl)
                 .then((response) => {
                     resolve(response.data);
                 })

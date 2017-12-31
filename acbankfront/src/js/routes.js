@@ -11,33 +11,35 @@ import ProductionDeposit from './containers/commerce/Production_deposit';
 import ProductionLoans from './containers/commerce/Production_loans';
 import RateDeposit from './containers/commerce/Rate_deposit';
 import RegisterCustomer from './containers/commerce/RegisterCustomer';
-import TelephoneDirector from './containers/commerce/TelephoneDirectory';
+import TelephoneDirectory from './containers/commerce/TelephoneDirectory';
+import LoansDetail from './containers/commerce/ProductionLoans/LoansDetail';
+import LoansHome from './containers/commerce/ProductionLoans/LoansHome';
+import DepositDetail from './containers/commerce/ProductionDeposit/DepositDetail'
+import DepositHome from './containers/commerce/ProductionDeposit/DepositHome'
 
 const routes = [
     {
         component: Root,
+        redirect: '/home',
         routes: [
             {
-                path: '/',
-                exact: true,
+                path: '/home',
+                // exact: true,
                 component: Home,
-                // routes: [
-                //   { path: '/child/:id/grand-child',
-                //     component: GrandChild
-                //   }
-                // ]
+                routes: [
+                    {
+                        path: '/home/ManagerHome',
+                        component: ManagerHome,
+                    },
+                    {
+                        path: '/home/StaffHome/:id',
+                        component: StaffHome,
+                    },
+                ]
             },
             {
                 path: '/Login',
                 component: Login,
-            },
-            {
-                path: '/ManagerHome',
-                component: ManagerHome,
-            },
-            {
-                path: '/StaffHome/:id',
-                component: StaffHome,
             },
             {
                 path: '/Bussiness/:id',
@@ -50,18 +52,38 @@ const routes = [
             {
                 path: '/ProductionDeposit',
                 component: ProductionDeposit,
+                routes: [
+                    {
+                        path: '/ProductionDeposit/DepositDetail/:id',
+                        component: DepositDetail
+                    },
+                    {
+                        path: '/ProductionDeposit/DepositHome',
+                        component: DepositHome
+                    }
+                ]
             },
             {
                 path: '/ProductionLoans',
                 component: ProductionLoans,
+                routes: [
+                    {
+                        path: '/ProductionLoans/LoansDetail/:id',
+                        component: LoansDetail
+                    },
+                    {
+                        path: '/ProductionLoans/LoansHome',
+                        component: LoansHome
+                    }
+                ]
             },
             {
                 path: '/RateDeposit',
                 component: RateDeposit,
             },
             {
-                path: '/TelephoneDirector',
-                component: TelephoneDirector,
+                path: '/TelephoneDirectory',
+                component: TelephoneDirectory,
             },
         ]
     }

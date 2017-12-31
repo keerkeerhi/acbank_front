@@ -16,6 +16,10 @@
     height: calc(100% - 56px);
 }
 
-.listItemCls:hover {
-    background: #ccc;
+.upInput {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    opacity: 0;
 }

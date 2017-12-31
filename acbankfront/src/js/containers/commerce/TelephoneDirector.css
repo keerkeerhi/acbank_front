@@ -1,0 +1,6 @@
+.callPhone{
+    cursor: pointer;
+}
+.callPhone:hover{
+    color: #2A96FF;
+}
