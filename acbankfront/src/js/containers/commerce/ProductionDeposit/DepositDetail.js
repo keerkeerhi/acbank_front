@@ -2,7 +2,6 @@
  * Created by Administrator on 2017/12/20.
  */
 import React, {Component} from 'react';
-import {Paper, RaisedButton} from 'material-ui';
 import {
     Table,
     TableBody,
@@ -368,6 +367,7 @@ class DepositDetail extends Component {
                     </div>
                 </div>
             );
+            default:return <div></div>;
         }
     }
 

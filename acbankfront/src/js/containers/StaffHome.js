@@ -6,7 +6,7 @@
  */
 import React, {Component} from 'react'
 import {Avatar, Dialog, FlatButton, RaisedButton} from 'material-ui'
-import {Toolbar, ToolbarGroup} from 'material-ui/Toolbar';
+import {Toolbar} from 'material-ui/Toolbar';
 import NotificationSystem from 'react-notification-system';
 import List from 'material-ui/List/List'
 import ListItem from 'material-ui/List/ListItem'
@@ -18,7 +18,7 @@ import {TextValidator} from 'react-material-ui-form-validator';
 import {isArray} from '../common/Util'
 import managerService from '../service/managerService'
 
-import {grey400, darkBlack, lightBlack} from 'material-ui/styles/colors';
+import {darkBlack} from 'material-ui/styles/colors';
 import IconButton from 'material-ui/IconButton';
 import NavigationExpandMoreIcon from 'material-ui/svg-icons/navigation/expand-more';
 import IconMenu from 'material-ui/IconMenu';
@@ -40,10 +40,10 @@ class StaffHome extends Component {
         del_winOpen: false,
         del_id: "",
         set_winOpen: false,
-        currentStaff: {email:'',phone:''},
-        imgFile:null,
-        fileName:null,
-        reallyStaff:{headimg:''}
+        currentStaff: {email: '', phone: ''},
+        imgFile: null,
+        fileName: null,
+        reallyStaff: {headimg: ''}
     }
 
     constructor(props) {
@@ -82,21 +82,20 @@ class StaffHome extends Component {
         this.setState({set_winOpen: true})
     }
     handleClose_set = () => {
-        this.getStaffDetail(this.props.match.params).then(res=>{
+        this.getStaffDetail(this.props.match.params).then(res => {
             this.setState({set_winOpen: false})
         })
     }
     handleSet = () => {
         let staff = this.state.currentStaff;
-        console.log('-------->save',staff);
+        console.log('-------->save', staff);
         let formData = new FormData();
         formData.append('headImg', this.state.imgFile);
-        formData.append('id', staff.id+'');
+        formData.append('id', staff.id + '');
         formData.append('email', staff.email);
         formData.append('phone', staff.phone);
         managerService.saveStaff(formData).then(res => {
-            if (res.flag=='1')
-            {
+            if (res.flag == '1') {
                 this.handleClose_set();
                 this._notificationSystem.addNotification({
                     title: 'Success',
@@ -111,11 +110,10 @@ class StaffHome extends Component {
 
     getStaffDetail = (params) => {
         return managerService.showStaff(params).then(res => {
-            if (isArray(res) && res.length > 0)
-            {
+            if (isArray(res) && res.length > 0) {
                 let sf = res[0];
                 let reallyStaff = JSON.parse(JSON.stringify(sf));
-                this.setState({currentStaff: sf,reallyStaff});
+                this.setState({currentStaff: sf, reallyStaff});
             }
         })
     }
@@ -143,8 +141,7 @@ class StaffHome extends Component {
         let finput = this.refs.upimg;
         finput.onchange = (() => {
             let fl = finput.files[0];
-            if (fl.size>2097152)
-            {
+            if (fl.size > 2097152) {
                 finput.value = "";
                 this._notificationSystem.addNotification({
                     title: '提示',
@@ -156,7 +153,7 @@ class StaffHome extends Component {
                 return;
             }
             if (finput.value.match(/\.(jpg|jpeg|JPG|JPEG)(\?.*)?$/)) {
-                this.setState({imgFile:finput.files[0]});
+                this.setState({imgFile: finput.files[0]});
             } else {
                 finput.value = "";
                 this._notificationSystem.addNotification({
@@ -197,7 +194,7 @@ class StaffHome extends Component {
             <section className="staffBody">
                 <Toolbar>
                     <Avatar
-                        src={this.state.reallyStaff.headimg?this.state.reallyStaff.headimg:defautimg}
+                        src={this.state.reallyStaff.headimg ? this.state.reallyStaff.headimg : defautimg}
                         size={30}
                         style={{marginTop: '10px'}}
                     />

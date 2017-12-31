@@ -3,7 +3,7 @@
  */
 import React, {Component} from 'react';
 import InfoHeader from './InfoHeader';
-import {Paper, MenuItem, RaisedButton, Dialog, FlatButton} from 'material-ui';
+import {Paper, MenuItem, RaisedButton} from 'material-ui';
 import {ValidatorForm} from 'react-form-validator-core';
 import {TextValidator, SelectValidator} from 'react-material-ui-form-validator';
 import NotificationSystem from 'react-notification-system';
@@ -55,9 +55,9 @@ class RegisterCustomer extends Component {
                     level: 'success',
                     position: 'tr'
                 })
-                setTimeout(()=>{
-                    this.props.history.push('/Bussiness/'+this.state.staffId);
-                },3150);
+                setTimeout(() => {
+                    this.props.history.push('/Bussiness/' + this.state.staffId);
+                }, 3150);
             }
             else
                 this._notificationSystem.addNotification({

@@ -18,8 +18,8 @@
       <file leaf-file-name="RegisterCustomer.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/containers/commerce/RegisterCustomer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="51" column="35" lean-forward="false" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="35" />
+            <state relative-caret-position="308">
+              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding>
                 <element signature="e#51#90#0" expanded="true" />
               </folding>
@@ -30,8 +30,8 @@
       <file leaf-file-name="ManagerHome.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/containers/ManagerHome.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1254">
-              <caret line="59" column="39" lean-forward="false" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="39" />
+            <state relative-caret-position="418">
+              <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
               <folding>
                 <element signature="e#102#140#0" expanded="true" />
               </folding>
@@ -39,34 +39,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Home.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/containers/Home.js">
+      <file leaf-file-name="homeService.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/service/homeService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+            <state relative-caret-position="308">
+              <caret line="18" column="6" lean-forward="true" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Plan.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Plan.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Login.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/containers/Login.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="770">
-              <caret line="37" column="48" lean-forward="false" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="48" />
-              <folding>
-                <element signature="e#51#89#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -81,11 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StaffHome.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="StaffHome.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/js/containers/StaffHome.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="78" column="5" lean-forward="true" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
+            <state relative-caret-position="267">
+              <caret line="233" column="49" lean-forward="false" selection-start-line="233" selection-start-column="49" selection-end-line="233" selection-end-column="49" />
               <folding>
                 <element signature="e#102#140#0" expanded="true" />
               </folding>
@@ -93,21 +71,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Root.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/Root.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Bussiness.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Bussiness.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/containers/Bussiness.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="22" column="110" lean-forward="false" selection-start-line="22" selection-start-column="110" selection-end-line="22" selection-end-column="110" />
+            <state relative-caret-position="374">
+              <caret line="19" column="14" lean-forward="false" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
               <folding>
                 <element signature="e#51#90#0" expanded="true" />
               </folding>
@@ -115,12 +83,50 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StaffHome.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/containers/StaffHome.css">
+      <file leaf-file-name="DepositDetail.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/containers/commerce/ProductionDeposit/DepositDetail.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
-              <folding />
+            <state relative-caret-position="311">
+              <caret line="357" column="79" lean-forward="true" selection-start-line="357" selection-start-column="79" selection-end-line="357" selection-end-column="79" />
+              <folding>
+                <element signature="e#51#90#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoansDetail.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/containers/commerce/ProductionLoans/LoansDetail.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="79" column="54" lean-forward="true" selection-start-line="79" selection-start-column="54" selection-end-line="79" selection-end-column="54" />
+              <folding>
+                <element signature="e#51#90#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DepositHome.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/containers/commerce/ProductionDeposit/DepositHome.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+              <folding>
+                <element signature="e#51#90#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoansHome.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/containers/commerce/ProductionLoans/LoansHome.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="19" column="52" lean-forward="true" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+              <folding>
+                <element signature="e#51#90#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -137,12 +143,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Route</find>
-      <find>renderRoutes</find>
-      <find>fGetRandom</find>
-      <find>StaffHome</find>
-      <find>TableHeader</find>
-      <find>TelephoneDirectory</find>
       <find>handleDel</find>
       <find>ToolbarGroup</find>
       <find>FlatButton</find>
@@ -157,16 +157,22 @@
       <find>isArray</find>
       <find>handleSet</find>
       <find>managerService</find>
-      <find>RaisedButton</find>
       <find>ValidatorForm</find>
       <find>handleChange</find>
       <find>imgFile</find>
-      <find>_notificationSystem</find>
       <find>currentStaff</find>
       <find>defautimg</find>
       <find>reallyStaff</find>
       <find>getStaffDetail</find>
       <find>save</find>
+      <find>DepositDetail</find>
+      <find>switdh</find>
+      <find>RaisedButton</find>
+      <find>renderRoutes</find>
+      <find>_notificationSystem</find>
+      <find>checkAuth</find>
+      <find>Toolbar</find>
+      <find>darkBlack</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -192,8 +198,6 @@
         <option value="$PROJECT_DIR$/src/js/containers/commerce/RegisterCustomer.css" />
         <option value="$PROJECT_DIR$/src/js/service/staffService.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/js/containers/commerce/RegisterCustomer.js" />
-        <option value="$PROJECT_DIR$/src/js/service/homeService.js" />
         <option value="$PROJECT_DIR$/src/js/common/Util.js" />
         <option value="$PROJECT_DIR$/src/js/containers/Login.js" />
         <option value="$PROJECT_DIR$/src/js/containers/commerce/PruductionDeposit/DepositHome.js" />
@@ -202,27 +206,29 @@
         <option value="$PROJECT_DIR$/src/js/containers/commerce/ProductionLoans/LoansDetaill.css" />
         <option value="$PROJECT_DIR$/src/js/containers/commerce/hotLine.js" />
         <option value="$PROJECT_DIR$/src/js/containers/commerce/HotLine.js" />
-        <option value="$PROJECT_DIR$/src/js/containers/commerce/ProductionLoans/LoansHome.js" />
         <option value="$PROJECT_DIR$/src/js/service/dictService.js" />
         <option value="$PROJECT_DIR$/src/js/containers/commerce/Production_loans.js" />
-        <option value="$PROJECT_DIR$/src/js/containers/commerce/ProductionDeposit/DepositHome.js" />
         <option value="$PROJECT_DIR$/src/js/containers/commerce/ProductionLoans/LoansDetail.css" />
         <option value="$PROJECT_DIR$/src/js/containers/commerce/Rate_deposit.js" />
-        <option value="$PROJECT_DIR$/src/js/containers/commerce/ProductionDeposit/DepositDetail.js" />
         <option value="$PROJECT_DIR$/src/js/containers/commerce/InfoHeader.css" />
         <option value="$PROJECT_DIR$/src/js/containers/commerce/Rate_deposit.css" />
-        <option value="$PROJECT_DIR$/src/js/containers/commerce/ProductionLoans/LoansDetail.js" />
         <option value="$PROJECT_DIR$/src/js/routes.js" />
         <option value="$PROJECT_DIR$/src/js/containers/commerce/TelephoneDirector.css" />
         <option value="$PROJECT_DIR$/src/js/containers/commerce/TelephoneDirectory.js" />
         <option value="$PROJECT_DIR$/src/js/service/managerService.js" />
-        <option value="$PROJECT_DIR$/src/js/containers/ManagerHome.js" />
         <option value="$PROJECT_DIR$/Plan.js" />
         <option value="$PROJECT_DIR$/src/js/Root.js" />
         <option value="$PROJECT_DIR$/src/js/containers/Home.js" />
         <option value="$PROJECT_DIR$/src/js/containers/StaffHome.css" />
-        <option value="$PROJECT_DIR$/src/js/containers/StaffHome.js" />
         <option value="$PROJECT_DIR$/src/js/containers/Bussiness.js" />
+        <option value="$PROJECT_DIR$/src/js/containers/commerce/ProductionDeposit/DepositDetail.js" />
+        <option value="$PROJECT_DIR$/src/js/containers/commerce/ProductionLoans/LoansDetail.js" />
+        <option value="$PROJECT_DIR$/src/js/containers/commerce/ProductionDeposit/DepositHome.js" />
+        <option value="$PROJECT_DIR$/src/js/containers/commerce/ProductionLoans/LoansHome.js" />
+        <option value="$PROJECT_DIR$/src/js/containers/commerce/RegisterCustomer.js" />
+        <option value="$PROJECT_DIR$/src/js/containers/ManagerHome.js" />
+        <option value="$PROJECT_DIR$/src/js/service/homeService.js" />
+        <option value="$PROJECT_DIR$/src/js/containers/StaffHome.js" />
       </list>
     </option>
   </component>
@@ -299,7 +305,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../react-notification-system" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
-    <property name="SearchEverywhereHistoryKey" value="buss&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/Bussiness.js&#10;reg&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/commerce/RegisterCustomer.js&#10;Home.js&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/Home.js&#10;Root&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/Root.js&#10;Staff&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/StaffHome.js&#10;Login.&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/Login.js&#10;Buss&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/Bussiness.js&#10;Lo&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/commerce/ProductionLoans/LoansDetail.js&#10;RateDeposit&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/commerce/Rate_deposit.js&#10;Bussi&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/Bussiness.js&#10;LoansH&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/commerce/ProductionLoans/LoansHome.js&#10;DepositHome&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/commerce/PruductionDeposit/DepositHome.js&#10;Login&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/Login.js&#10;Home.&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/Home.js&#10;pro&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/commerce/Production_loans.js&#10;mana&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/ManagerHome.js&#10;Login.js&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/Login.js&#10;production&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/commerce/Production_loans.js&#10;staff&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/StaffHome.js&#10;Manager&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/ManagerHome.js&#10;pack&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/package.json&#10;Mana&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/ManagerHome.js&#10;Bussiness.js&#9;null&#9;null&#10;route&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/routes.js&#10;StaffHome&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/StaffHome.js&#10;Util&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/common/Util.js&#10;homes&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/service/homeService.js&#10;manager&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/ManagerHome.js&#10;login.js&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/Login.js&#10;ManagerHome&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/ManagerHome.js&#10;glob&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/common/globalConfig.js&#10;pa&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/package.json" />
+    <property name="SearchEverywhereHistoryKey" value="sTAF&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/StaffHome.js&#10;homeser&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/service/homeService.js&#10;Manag&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/ManagerHome.js&#10;Register&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/commerce/RegisterCustomer.js&#10;Loansh&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/commerce/ProductionLoans/LoansHome.js&#10;DEpositH&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/commerce/ProductionDeposit/DepositHome.js&#10;Loans&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/commerce/ProductionLoans/LoansDetail.js&#10;Depositd&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/commerce/ProductionDeposit/DepositDetail.js&#10;buss&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/Bussiness.js&#10;reg&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/commerce/RegisterCustomer.js&#10;Home.js&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/Home.js&#10;Root&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/Root.js&#10;Staff&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/StaffHome.js&#10;Login.&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/Login.js&#10;Buss&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/Bussiness.js&#10;Lo&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/commerce/ProductionLoans/LoansDetail.js&#10;RateDeposit&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/commerce/Rate_deposit.js&#10;Bussi&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/Bussiness.js&#10;LoansH&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/commerce/ProductionLoans/LoansHome.js&#10;DepositHome&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/commerce/PruductionDeposit/DepositHome.js&#10;Login&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/Login.js&#10;Home.&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/Home.js&#10;pro&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/commerce/Production_loans.js&#10;mana&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/ManagerHome.js&#10;Login.js&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/Login.js&#10;production&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/commerce/Production_loans.js&#10;staff&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/StaffHome.js&#10;Manager&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/ManagerHome.js&#10;pack&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/package.json&#10;Mana&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/ManagerHome.js&#10;Bussiness.js&#9;null&#9;null&#10;route&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/routes.js&#10;StaffHome&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/StaffHome.js&#10;Util&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/common/Util.js&#10;homes&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/service/homeService.js&#10;manager&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/ManagerHome.js&#10;login.js&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/Login.js&#10;ManagerHome&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/containers/ManagerHome.js&#10;glob&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/src/js/common/globalConfig.js&#10;pa&#9;FILE&#9;file://D:/demo/github/acbank_front/acbankfront/package.json" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
@@ -439,12 +445,12 @@
       <workItem from="1514585054757" duration="43642000" />
       <workItem from="1514686206277" duration="369000" />
       <workItem from="1514686615848" duration="3136000" />
-      <workItem from="1514710114461" duration="7139000" />
+      <workItem from="1514710114461" duration="8043000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="152932000" />
+    <option name="totallyTimeSpent" value="153836000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -457,8 +463,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18229716" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18229716" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19480519" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -584,6 +591,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
           <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -616,13 +624,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/service/homeService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="12" column="60" lean-forward="true" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
@@ -637,13 +638,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/containers/commerce/ProductionLoans/LoansHome.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="21" column="42" lean-forward="false" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/common/Util.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="305">
@@ -655,13 +649,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/containers/commerce/ProductionDeposit/DepositHome.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="36" column="89" lean-forward="false" selection-start-line="36" selection-start-column="89" selection-end-line="36" selection-end-column="89" />
         </state>
       </provider>
     </entry>
@@ -683,16 +670,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/containers/commerce/ProductionDeposit/DepositDetail.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="28" column="34" lean-forward="true" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
-          <folding>
-            <element signature="e#51#90#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -721,13 +698,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="20" column="27" lean-forward="true" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/containers/commerce/ProductionLoans/LoansDetail.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -804,7 +774,7 @@
     <entry file="file://$PROJECT_DIR$/src/js/containers/Home.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
-          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -817,42 +787,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/containers/ManagerHome.js">
+    <entry file="file://$PROJECT_DIR$/src/js/containers/Bussiness.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1254">
-          <caret line="59" column="39" lean-forward="false" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="39" />
+        <state relative-caret-position="374">
+          <caret line="19" column="14" lean-forward="false" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
           <folding>
-            <element signature="e#102#140#0" expanded="true" />
+            <element signature="e#51#90#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/containers/commerce/ProductionDeposit/DepositDetail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="357" column="79" lean-forward="true" selection-start-line="357" selection-start-column="79" selection-end-line="357" selection-end-column="79" />
+          <folding>
+            <element signature="e#51#90#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/containers/commerce/ProductionLoans/LoansDetail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="79" column="54" lean-forward="true" selection-start-line="79" selection-start-column="54" selection-end-line="79" selection-end-column="54" />
+          <folding>
+            <element signature="e#51#90#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/containers/commerce/ProductionDeposit/DepositHome.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+          <folding>
+            <element signature="e#51#90#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/containers/commerce/ProductionLoans/LoansHome.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="19" column="52" lean-forward="true" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+          <folding>
+            <element signature="e#51#90#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/containers/commerce/RegisterCustomer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="51" column="35" lean-forward="false" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="35" />
+        <state relative-caret-position="308">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
             <element signature="e#51#90#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/containers/StaffHome.js">
+    <entry file="file://$PROJECT_DIR$/src/js/containers/ManagerHome.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="78" column="5" lean-forward="true" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
+        <state relative-caret-position="418">
+          <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
           <folding>
             <element signature="e#102#140#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/containers/Bussiness.js">
+    <entry file="file://$PROJECT_DIR$/src/js/service/homeService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="22" column="110" lean-forward="false" selection-start-line="22" selection-start-column="110" selection-end-line="22" selection-end-column="110" />
+        <state relative-caret-position="308">
+          <caret line="18" column="6" lean-forward="true" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/containers/StaffHome.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="233" column="49" lean-forward="false" selection-start-line="233" selection-start-column="49" selection-end-line="233" selection-end-column="49" />
           <folding>
-            <element signature="e#51#90#0" expanded="true" />
+            <element signature="e#102#140#0" expanded="true" />
           </folding>
         </state>
       </provider>

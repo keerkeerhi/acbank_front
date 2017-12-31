@@ -5,8 +5,6 @@ import axios from 'axios';
 import {global_host} from '../common/globalConfig';
 import {fGetRandom} from '../common/Util'
 
-const checkAuth = "checkAuth";
-
 export default {
     checkAuth(){
         return new Promise((resolve,reject)=>{

@@ -5,7 +5,7 @@
  * Created by Administrator on 2017/12/20.
  */
 import React, {Component} from 'react'
-import {Avatar, Dialog, FlatButton, FloatingActionButton, Divider, Paper, TextField, RaisedButton} from 'material-ui'
+import {Avatar, Dialog, FlatButton, FloatingActionButton, TextField, RaisedButton} from 'material-ui'
 import {Toolbar, ToolbarGroup} from 'material-ui/Toolbar';
 import NotificationSystem from 'react-notification-system';
 import List from 'material-ui/List/List'
@@ -104,12 +104,13 @@ class ManagerHome extends Component {
         })
     }
 
-    handleLogout = () =>{
-        managerService.logout().then(res=>{
-            if (res=='1')
+    handleLogout = () => {
+        managerService.logout().then(res => {
+            if (res == '1')
                 this.props.history.push('/Login')
         })
     }
+
     render() {
         console.log('====>', this.state.staffList);
         const actions = [

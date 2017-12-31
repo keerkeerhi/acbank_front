@@ -2,7 +2,7 @@
  * Created by Administrator on 2017/12/20.
  */
 import React, {Component} from 'react';
-import {Paper, RaisedButton} from 'material-ui';
+import {RaisedButton} from 'material-ui';
 import HotLine from '../HotLine'
 import dictServer from '../../../service/dictService';
 import {isArray} from '../../../common/Util'
@@ -40,14 +40,14 @@ class LoansDetail extends Component {
                         </p>
                     </section>
                     {
-                        this.state.dataList[type].usefor?(
+                        this.state.dataList[type].usefor ? (
                             <section>
                                 <h4>贷款用途：</h4>
                                 <p>
                                     {this.state.dataList[type].usefor}
                                 </p>
                             </section>
-                        ):""
+                        ) : ""
                     }
                     <section>
                         <h4>授信额度：</h4>
@@ -56,24 +56,24 @@ class LoansDetail extends Component {
                         </p>
                     </section>
                     {
-                        this.state.dataList[type].ratio?(
+                        this.state.dataList[type].ratio ? (
                             <section>
                                 <h4>贷款利率：</h4>
                                 <p>
                                     {this.state.dataList[type].ratio}
                                 </p>
                             </section>
-                        ):""
+                        ) : ""
                     }
                     {
-                        this.state.dataList[type].timelimit?(
+                        this.state.dataList[type].timelimit ? (
                             <section>
                                 <h4>贷款期限：</h4>
                                 <p>
                                     {this.state.dataList[type].timelimit}
                                 </p>
                             </section>
-                        ):""
+                        ) : ""
                     }
                     <div style={{textAlign: 'center'}}>
                         <RaisedButton style={{margin: '20px 20px 0 0'}}

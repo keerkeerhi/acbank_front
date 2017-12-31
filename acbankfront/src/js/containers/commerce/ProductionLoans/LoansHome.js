@@ -2,8 +2,6 @@
  * Created by Administrator on 2017/12/20.
  */
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom'
-import {renderRoutes} from 'react-router-config'
 import {List, ListItem} from 'material-ui/List';
 import Subheader from 'material-ui/Subheader';
 import ContentSend from 'material-ui/svg-icons/content/send';
