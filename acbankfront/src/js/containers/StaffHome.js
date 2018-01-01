@@ -5,8 +5,9 @@
  * Created by Administrator on 2017/12/20.
  */
 import React, {Component} from 'react'
+import Clipboard from 'clipboard'
 import {Avatar, Dialog, FlatButton, RaisedButton} from 'material-ui'
-import {Toolbar} from 'material-ui/Toolbar';
+import {Toolbar, ToolbarGroup} from 'material-ui/Toolbar';
 import NotificationSystem from 'react-notification-system';
 import List from 'material-ui/List/List'
 import ListItem from 'material-ui/List/ListItem'
@@ -32,6 +33,20 @@ class StaffHome extends Component {
 
     componentDidMount() {
         this._notificationSystem = this.refs.notificationSystem;
+        let url = window.location.host + '/Bussiness/' + this.props.match.params.id;
+        let v = this;
+        new Clipboard('#copyBtn', {
+            text() {
+                v._notificationSystem.addNotification({
+                    title: 'Success',
+                    message: '已复制！',
+                    autoDismiss: 3,
+                    level: 'success',
+                    position: 'tr'
+                });
+                return url;
+            }
+        });
     }
 
     state = {
@@ -198,6 +213,11 @@ class StaffHome extends Component {
                         size={30}
                         style={{marginTop: '10px'}}
                     />
+                    <ToolbarGroup>
+                        <RaisedButton label="复制我的主页" id="copyBtn"
+                                      primary={true} />
+                    </ToolbarGroup>
+
                     <IconMenu style={{float: 'right'}}
                               iconButtonElement={
                                   <IconButton touch={true}>
