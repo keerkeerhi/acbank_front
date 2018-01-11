@@ -9,8 +9,7 @@ import ContentSend from 'material-ui/svg-icons/content/send';
 class LoansHome extends Component {
     render(props) {
         console.log('---------LoansHome')
-
-        return (<List>
+        return (<List style={{overflow:'auto'}} >
                 <Subheader><h3>汤阴农商银行信贷产品</h3></Subheader>
                 <ListItem primaryText="普惠贷" rightIcon={<ContentSend />}
                           onClick={() => {

@@ -55,7 +55,9 @@ class StaffHome extends Component {
         del_winOpen: false,
         del_id: "",
         set_winOpen: false,
+        setpwd_winOpen: false,
         currentStaff: {email: '', phone: ''},
+        pwdInfo: {oldPwd: '', newPwd: '', newPwdSure: ''},
         imgFile: null,
         fileName: null,
         reallyStaff: {headimg: ''}
@@ -96,10 +98,17 @@ class StaffHome extends Component {
     handleOpen_set = () => {
         this.setState({set_winOpen: true})
     }
+    handleOpen_setpwd = () => {
+        this.setState({setpwd_winOpen: true})
+    }
     handleClose_set = () => {
         this.getStaffDetail(this.props.match.params).then(res => {
             this.setState({set_winOpen: false})
         })
+    }
+    handleClose_setpwd = () => {
+        this.setState({setpwd_winOpen: false})
+        this.setState({pwdInfo: {oldPwd: '', newPwd: '', newPwdSure: ''}})
     }
     handleSet = () => {
         let staff = this.state.currentStaff;
@@ -120,6 +129,42 @@ class StaffHome extends Component {
                     position: 'tr'
                 })
             }
+        })
+    }
+    handleSetPwd = () => {
+        let info = this.state.pwdInfo;
+        if (info.newPwd != info.newPwdSure) {
+            this._notificationSystem.addNotification({
+                title: '提示',
+                message: "两次输入密码不一致！",
+                autoDismiss: 3,
+                level: 'info',
+                position: 'tr'
+            })
+            return;
+        }
+        managerService.updateStaff(info,this.props.match.params.id).then(res=>{
+            if (res=='1')
+            {
+                this._notificationSystem.addNotification({
+                    title: 'Success',
+                    message: '修改成功，重新登录！',
+                    autoDismiss: 3,
+                    level: 'success',
+                    position: 'tr'
+                })
+                setTimeout(()=>{
+                    this.handleLogout()
+                },1500)
+            }
+            else
+                this._notificationSystem.addNotification({
+                    title: 'Fail!',
+                    message: "旧密码有误，修改失败！",
+                    autoDismiss: 3,
+                    level: 'error',
+                    position: 'tr'
+                })
         })
     }
 
@@ -191,6 +236,14 @@ class StaffHome extends Component {
         });
     };
 
+    handleChange_pwd = name => event => {
+        this.setState({
+            pwdInfo: Object.assign(this.state.pwdInfo,
+                {[name]: event.target.value,}
+            )
+        });
+    };
+
     render() {
         const actions_del = [
             <FlatButton
@@ -215,7 +268,7 @@ class StaffHome extends Component {
                     />
                     <ToolbarGroup>
                         <RaisedButton label="复制我的主页" id="copyBtn"
-                                      primary={true} />
+                                      primary={true}/>
                     </ToolbarGroup>
 
                     <IconMenu style={{float: 'right'}}
@@ -226,6 +279,7 @@ class StaffHome extends Component {
                               }
                     >
                         <MenuItem primaryText="设置" onClick={this.handleOpen_set}/>
+                        <MenuItem primaryText="修改密码" onClick={this.handleOpen_setpwd}/>
                         <MenuItem primaryText="注销" onClick={this.handleLogout}/>
                     </IconMenu>
                 </Toolbar>
@@ -315,6 +369,55 @@ class StaffHome extends Component {
                             primary={true}
                             style={{float: 'right', margin: '20px 20px 0 0'}}
                             onClick={this.handleClose_set}
+                        />
+                    </ValidatorForm>
+                </Dialog>
+                <Dialog
+                    title="修改密码"
+                    modal={false}
+                    open={this.state.setpwd_winOpen}
+                    onRequestClose={this.handleClose_setpwd}
+                >
+                    <ValidatorForm
+                        ref="formPwd"
+                        onSubmit={this.handleSetPwd}
+                        autoComplete="off"
+                        onError={errors => console.log(errors)}
+                    >
+                        <TextValidator
+                            value={this.state.pwdInfo.oldPwd}
+                            floatingLabelText="原密码"
+                            name="oldPwd"
+                            onChange={this.handleChange_pwd('oldPwd')}
+                            validators={['required']}
+                            errorMessages={['请填写原密码']}
+                            margin="normal"
+                        /><br/>
+                        <TextValidator
+                            value={this.state.pwdInfo.newPwd}
+                            floatingLabelText="新密码"
+                            name="newPwd"
+                            onChange={this.handleChange_pwd('newPwd')}
+                            validators={['required']}
+                            errorMessages={['请填写密码']}
+                        /><br/>
+                        <TextValidator
+                            value={this.state.pwdInfo.newPwdSure}
+                            floatingLabelText="确认新密码"
+                            name="newPwdSure"
+                            onChange={this.handleChange_pwd('newPwdSure')}
+                            validators={['required']}
+                            errorMessages={['请再次填写新密码']}
+                        /><br/>
+                        <RaisedButton label="确认"
+                                      keyboardFocused={true} type="submit"
+                                      style={{float: 'right', margin: '20px 20px 0 0'}}
+                                      primary={true}/>
+                        <RaisedButton
+                            label="取消"
+                            primary={true}
+                            style={{float: 'right', margin: '20px 20px 0 0'}}
+                            onClick={this.handleClose_setpwd}
                         />
                     </ValidatorForm>
                 </Dialog>

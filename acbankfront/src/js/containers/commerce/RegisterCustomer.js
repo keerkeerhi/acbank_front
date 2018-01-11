@@ -3,6 +3,7 @@
  */
 import React, {Component} from 'react';
 import InfoHeader from './InfoHeader';
+import Footer from './Footer'
 import {Paper, MenuItem, RaisedButton} from 'material-ui';
 import {ValidatorForm} from 'react-form-validator-core';
 import {TextValidator, SelectValidator} from 'react-material-ui-form-validator';
@@ -77,7 +78,7 @@ class RegisterCustomer extends Component {
     render(props) {
         return (
             <div className="homeDiv">
-                <InfoHeader/>
+                <InfoHeader />
                 <Paper className="registPaper">
                     <section className="registSec">
                         <div className="applyTitle">
@@ -140,6 +141,7 @@ class RegisterCustomer extends Component {
                         </ValidatorForm>
                     </section>
                 </Paper>
+                <Footer />
             </div>
         )
     }

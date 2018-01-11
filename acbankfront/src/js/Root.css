@@ -1,0 +1,8 @@
+.pageContent{
+    height: calc(100% - 150px);
+    overflow: auto;
+}
+
+td,th{
+    white-space:pre-wrap !important;
+}

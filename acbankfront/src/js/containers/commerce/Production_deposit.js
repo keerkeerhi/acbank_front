@@ -3,6 +3,7 @@
  */
 import React,{Component} from 'react';
 import InfoHeader from './InfoHeader';
+import Footer from './Footer'
 import {renderRoutes} from 'react-router-config'
 
 class Production_deposit extends Component {
@@ -10,8 +11,11 @@ class Production_deposit extends Component {
         let {route} = this.props;
         return (
             <div className="homeDiv">
-                <InfoHeader/>
-                {renderRoutes(route.routes, {someProp: 'these extra props are optional'})}
+                <InfoHeader />
+                <section className="pageContent">
+                    {renderRoutes(route.routes, {someProp: 'these extra props are optional'})}
+                </section>
+                <Footer />
             </div>
         )
     }

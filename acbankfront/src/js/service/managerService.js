@@ -63,5 +63,17 @@ export default {
                     reject(error);
                 });
         })
+    },
+    updateStaff(params,id)
+    {
+        return new Promise((resolve,reject)=>{
+            axios.put(global_host + staffUrl+"/"+id,{info:params})
+                .then((response) => {
+                    resolve(response.data);
+                })
+                .catch((error) => {
+                    reject(error);
+                });
+        })
     }
 }

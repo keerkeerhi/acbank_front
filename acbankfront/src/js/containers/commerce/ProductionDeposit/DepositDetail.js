@@ -39,7 +39,7 @@ class DepositDetail extends Component {
                                 <TableHeader adjustForCheckbox={false} displaySelectAll={false}>
                                     <TableRow>
                                         <TableHeaderColumn style={{width:'40%'}}>实际存期</TableHeaderColumn>
-                                        <TableHeaderColumn style={{width:'60%',textAlign:'center'}} >执行利率标准<br/>
+                                        <TableHeaderColumn style={{width:'60%',textAlign:'center'}} >执行利率标准
                                             （活期按支取日、定期按起息日对外公布对应档次利率）</TableHeaderColumn>
                                     </TableRow>
                                 </TableHeader>

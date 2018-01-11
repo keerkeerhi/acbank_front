@@ -23,7 +23,7 @@ class LoansDetail extends Component {
         if (this.state.dataList.length == 0)
             return <div></div>
         return (
-            <div className="DetailContent">
+            <div style={{overflow:'auto'}} className="DetailContent">
                 <div className="DetailPaper">
                     <HotLine/>
                     <h3 style={{textAlign: 'center'}}>{this.state.dataList[type].name}</h3>
