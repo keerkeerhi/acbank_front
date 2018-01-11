@@ -155,7 +155,7 @@ class ManagerHome extends Component {
                                 <ListItem key={index}
                                           leftAvatar={
                                               <Avatar
-                                                  src={defautimg}
+                                                  src={staff.headimg ? staff.headimg : defautimg}
                                                   size={30}
                                                   style={style}
                                               />
