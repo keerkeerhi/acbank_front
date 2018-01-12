@@ -5,17 +5,22 @@ import React, {Component} from 'react';
 import {RaisedButton} from 'material-ui';
 import HotLine from '../HotLine'
 import dictServer from '../../../service/dictService';
+import managerService from '../../../service/managerService';
 import {isArray} from '../../../common/Util'
 
 class LoansDetail extends Component {
 
     constructor(props) {
         super();
-        this.state = {id: props.match.params.id, dataList: []};
+        let staffId = props.match.params.userId;
+        this.state = {id: props.match.params.id, dataList: [],currentStaff:{}};
         dictServer.dictListDetail({id: 2}).then(res => {
             if (isArray(res))
                 this.setState({dataList: res});
         })
+        managerService.showStaff({id: staffId}).then(res => {
+            this.setState({currentStaff: res[0]});
+        });
     }
 
     getContent(tp) {
@@ -25,7 +30,7 @@ class LoansDetail extends Component {
         return (
             <div style={{overflow:'auto'}} className="DetailContent">
                 <div className="DetailPaper">
-                    <HotLine/>
+                    <HotLine num={this.state.currentStaff.phone} />
                     <h3 style={{textAlign: 'center'}}>{this.state.dataList[type].name}</h3>
                     <section>
                         <h4>贷款对象：</h4>
@@ -77,6 +82,11 @@ class LoansDetail extends Component {
                     }
                     <div style={{textAlign: 'center'}}>
                         <RaisedButton style={{margin: '20px 20px 0 0'}}
+                                      onClick={() => {
+                                          let ae = document.createElement('a');
+                                          ae.href = "tel:" + this.state.currentStaff.phone;
+                                          ae.click();
+                                      }}
                                       label="立刻申请" primary={true}/>
                     </div>
                 </div>

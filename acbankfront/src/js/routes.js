@@ -54,11 +54,11 @@ const routes = [
                 component: ProductionDeposit,
                 routes: [
                     {
-                        path: '/ProductionDeposit/DepositDetail/:id',
+                        path: '/ProductionDeposit/DepositDetail/:id/:userId',
                         component: DepositDetail
                     },
                     {
-                        path: '/ProductionDeposit/DepositHome',
+                        path: '/ProductionDeposit/DepositHome/:userId',
                         component: DepositHome
                     }
                 ]
@@ -68,21 +68,21 @@ const routes = [
                 component: ProductionLoans,
                 routes: [
                     {
-                        path: '/ProductionLoans/LoansDetail/:id',
+                        path: '/ProductionLoans/LoansDetail/:id/:userId',
                         component: LoansDetail
                     },
                     {
-                        path: '/ProductionLoans/LoansHome',
+                        path: '/ProductionLoans/LoansHome/:userId',
                         component: LoansHome
                     }
                 ]
             },
             {
-                path: '/RateDeposit',
+                path: '/RateDeposit/:userId',
                 component: RateDeposit,
             },
             {
-                path: '/TelephoneDirectory',
+                path: '/TelephoneDirectory/:userId',
                 component: TelephoneDirectory,
             },
         ]

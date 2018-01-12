@@ -59,7 +59,7 @@ class Bussiness extends Component {
                     </li>
                     <li>
                         <FloatingActionButton onClick={() => {
-                            this.props.history.push('/ProductionLoans/LoansHome');
+                            this.props.history.push('/ProductionLoans/LoansHome/'+this.state.staffId);
                         }}
                                               backgroundColor="#229988"
                                               children={<i className="iconfont icon-weibiaoti5 fontsize50"></i>}
@@ -68,7 +68,7 @@ class Bussiness extends Component {
                     </li>
                     <li>
                         <FloatingActionButton onClick={() => {
-                            this.props.history.push('/ProductionDeposit/DepositHome');
+                            this.props.history.push('/ProductionDeposit/DepositHome/'+this.state.staffId);
                         }}
                                               backgroundColor="#9955BB"
                                               children={<i
@@ -78,7 +78,7 @@ class Bussiness extends Component {
                     </li>
                     <li>
                         <FloatingActionButton onClick={() => {
-                            this.props.history.push('/RateDeposit');
+                            this.props.history.push('/RateDeposit/'+this.state.staffId);
                         }}
                                               children={<i className="iconfont icon-cunkuanlishuai fontsize50"></i>}
                         />
@@ -86,7 +86,7 @@ class Bussiness extends Component {
                     </li>
                     <li>
                         <FloatingActionButton onClick={() => {
-                            this.props.history.push('/TelephoneDirectory');
+                            this.props.history.push('/TelephoneDirectory/'+this.state.staffId);
                         }}
                                               backgroundColor="#42DF91"
                                               children={<i className="iconfont icon-dianhuabu fontsize50"></i>}

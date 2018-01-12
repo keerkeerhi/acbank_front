@@ -14,17 +14,22 @@ import {
 import {RaisedButton} from 'material-ui';
 import HotLine from './HotLine';
 import dictServer from '../../service/dictService';
+import managerService from '../../service/managerService';
 import {isArray} from '../../common/Util'
 import './TelephoneDirector.css'
 
 class TelephoneDirectory extends Component {
-    constructor() {
+    constructor(props) {
         super();
-        this.state = {dataList: []};
+        this.state = {dataList: [],currentStaff:{}};
         dictServer.dictListDetail({id: 3}).then(res => {
             if (isArray(res))
                 this.setState({dataList: res});
         })
+        let staffId = props.match.params.userId;
+        managerService.showStaff({id: staffId}).then(res => {
+            this.setState({currentStaff: res[0]});
+        });
     }
 
     render(props) {
@@ -32,7 +37,7 @@ class TelephoneDirectory extends Component {
             <div className="homeDiv">
                 <InfoHeader/>
                 <section className="rateBody">
-                    <HotLine/>
+                    <HotLine num={this.state.currentStaff.phone} />
                     <Table>
                         <TableHeader adjustForCheckbox={false} displaySelectAll={false}>
                             <TableRow>
@@ -61,6 +66,11 @@ class TelephoneDirectory extends Component {
                     </Table>
                     <div style={{textAlign: 'center'}}>
                         <RaisedButton style={{margin: '20px 20px 0 0'}}
+                                      onClick={() => {
+                                          let ae = document.createElement('a');
+                                          ae.href = "tel:" + this.state.currentStaff.phone;
+                                          ae.click();
+                                      }}
                                       label="我要贷款" primary={true}/>
                     </div>
                 </section>

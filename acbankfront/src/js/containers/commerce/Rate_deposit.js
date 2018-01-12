@@ -15,15 +15,26 @@ import {
 } from 'material-ui/Table';
 import HotLine from './HotLine';
 import './Rate_deposit.css'
+import managerService from '../../service/managerService';
 
 class Rate_deposit extends Component {
+
+    constructor(props) {
+        super();
+        let staffId = props.match.params.userId;
+        this.state = {currentStaff:{}};
+        managerService.showStaff({id: staffId}).then(res => {
+            this.setState({currentStaff: res[0]});
+        });
+    }
+
     render(props){
         return (
             <div className="homeDiv" style={{overflow:"auto"}}>
                 <InfoHeader/>
                 <section className="pageContent">
                     <section className="rateBody">
-                        <HotLine/>
+                        <HotLine num={this.state.currentStaff.phone} />
                         <h3>人民币存款利率</h3>
                         <h4>河南省农信社存款利率执行情况表 </h4>
                         <div className="unitCls">

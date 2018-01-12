@@ -12,11 +12,17 @@ import {
 } from 'material-ui/Table';
 import HotLine from '../HotLine'
 import '../ProductionLoans/LoansDetail.css'
+import managerService from '../../../service/managerService';
+
 class DepositDetail extends Component {
 
     constructor(props) {
         super();
-        this.state = {id: props.match.params.id};
+        let staffId = props.match.params.userId;
+        this.state = {id: props.match.params.id,currentStaff:{}};
+        managerService.showStaff({id: staffId}).then(res => {
+            this.setState({currentStaff: res[0]});
+        });
     }
 
     getContent(tp) {
@@ -25,7 +31,7 @@ class DepositDetail extends Component {
             case 1:return(
                 <div className="DetailContent">
                     <div className="DetailPaper">
-                        <HotLine/>
+                        <HotLine num={this.state.currentStaff.phone} />
                         <h3 style={{textAlign: 'center'}}>【个人】"享档档"存款</h3>
                         <section>
                             <h4>产品介绍：</h4>
@@ -126,7 +132,7 @@ class DepositDetail extends Component {
             case 2:return (
                 <div className="DetailContent">
                     <div className="DetailPaper">
-                        <HotLine/>
+                        <HotLine num={this.state.currentStaff.phone} />
                         <h3 style={{textAlign: 'center'}}>【个人】智能通知存款</h3>
                         <section>
                             <h4>产品介绍：</h4>
@@ -200,7 +206,7 @@ class DepositDetail extends Component {
             case 3: return (
                 <div className="DetailContent">
                     <div className="DetailPaper">
-                        <HotLine/>
+                        <HotLine num={this.state.currentStaff.phone} />
                         <h3 style={{textAlign: 'center'}}>【个人】免预约通知存款</h3>
                         <section>
                             <h4>产品介绍：</h4>
@@ -276,7 +282,7 @@ class DepositDetail extends Component {
             case 4: return (
                 <div className="DetailContent">
                     <div className="DetailPaper">
-                        <HotLine/>
+                        <HotLine num={this.state.currentStaff.phone} />
                         <h3 style={{textAlign: 'center'}}>【个人】七天理财</h3>
                         <section>
                             <h4>产品介绍：</h4>
@@ -307,7 +313,7 @@ class DepositDetail extends Component {
             case 5: return (
                 <div className="DetailContent">
                     <div className="DetailPaper">
-                        <HotLine/>
+                        <HotLine num={this.state.currentStaff.phone} />
                         <h3 style={{textAlign: 'center'}}>【对公】周周赚</h3>
                         <section>
                             <h4>产品介绍：</h4>
