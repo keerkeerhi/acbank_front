@@ -19,6 +19,7 @@ import DepositHome from './containers/commerce/ProductionDeposit/DepositHome'
 
 const routes = [
     {
+        path: '/',
         component: Root,
         redirect: '/home',
         routes: [

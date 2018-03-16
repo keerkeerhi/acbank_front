@@ -6,3 +6,13 @@
 td,th{
     white-space:pre-wrap !important;
 }
+
+.toHost{
+    position: absolute;
+    top: calc(50% - 9.5px);
+    left: calc(50% - 44px);
+}
+.key--white { fill: #fff; stroke: #777; }
+.key--black { fill: #333; stroke: #000; }
+.key--white:hover { fill: cyan; stroke: #00999b; }
+.key--black:hover { fill: magenta; stroke: #910099; }
